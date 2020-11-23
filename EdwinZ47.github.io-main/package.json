@@ -1,0 +1,25 @@
+{
+  "name": "426frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwinZ47/426FrontEnd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdwinZ47/426FrontEnd/issues"
+  },
+  "homepage": "https://github.com/EdwinZ47/426FrontEnd#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "browser-sync": "^2.26.13",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1"
+  },
+  "description": ""
+}

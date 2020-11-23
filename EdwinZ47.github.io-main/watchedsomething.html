@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-in</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    
+    <body>
+        <div class=search-container>
+            <h1 style="color:#f33c24">Watched something? Add it here!</h1>
+            <form>
+                <textarea id="movie-search-field" placeholder="Type the movie title here" cols="100" rows="1"></textarea>
+            </form>
+        </div>
+        <div class="navigation-panel" style="position: absolute; top: 20px;">
+            <p>Done with adding movies?</p>
+            <a href="movielist.html"><button class="navbut">Click me to go back!</button></a>
+        </div>
+        <div class="search-result-container" id="root">
+        </div>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.js"></script>
+    <script src="data.js"></script>
+    <script src="watchedsomething.js" type="module"></script>
+</html>

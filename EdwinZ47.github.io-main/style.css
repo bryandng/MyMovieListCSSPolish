@@ -1,0 +1,290 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+.sign-in-container {
+  width: 360px;
+  margin: auto;
+}
+
+h1 {
+  font-weight: normal;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.fa-film {
+  color: #f33c24;
+  font-size: 5em;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #f33c24;
+  width: 40%;
+  border: 0;
+  padding: 15px;
+  margin: 10px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #e22d15;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.container:before,
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+
+}
+
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+
+body {
+  margin: 100px;
+  background: #ad2310d5;
+  /* fallback for old browsers */
+  background: linear-gradient(#642017e1, #642017e1), url(https://i.redd.it/4fxxbm4opjd31.jpg);
+  background-repeat: repeat-y;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+#login-error-container {
+  display: none;
+}
+
+#registration-success-container {
+  display: none;
+}
+
+#registration-failed-container {
+  display: none;
+}
+
+
+/*These are for movielist*/
+.navigation-panel {
+  position: fixed;
+  top: 300px;
+  left: 15px;
+  width: 15%;
+  background-color:#f2f2f2;
+  padding: 15px;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.navbut {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f33c24;
+  border: 0;
+  /* border-radius: 10px; */
+  padding: 15px;
+  margin: 10px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer
+}
+
+.navbut:hover {
+  background: #e22d15
+}
+.banner {
+  border:0;
+}
+
+.banner-head {
+  text-align: center;
+  font-size: 5em;
+  color:  #f33c24;
+  /* text-shadow: 3px 3px 4px rgb(0, 0, 0); */
+  margin-bottom: 0;
+}
+
+.sub-head {
+  text-align: center;
+  padding-bottom: 10px;
+  color: rgb(255, 255, 255);
+  /* text-shadow: 2px 2px 4px #f33c24; */
+  /* font-style: italic; */
+  font-size: 2em;
+}
+
+.movie-list-container {
+  display: grid;
+  background-color: beige;
+  margin: 3% 20%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.list-header-container {
+  display: grid;
+  grid-template-columns: 170px auto 170px;
+  background-color: white;
+  /* border-top-left-radius: 15px;
+  border-top-right-radius: 15px; */
+}
+
+.list-header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+}
+
+.list-header-container h2 {
+  text-align: center;
+  color: #f33c24;
+  /* text-shadow: 3px 3px 4px rgb(0, 0, 0); */
+  font-family: 'Bebas Neue', cursive;
+}
+
+.movie-entry {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  margin: 5px 15px 0px;
+  border-bottom: thin solid black;
+}
+
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ;
+  font-size: x-large;
+  font-family: fantasy;
+}
+
+.title-container .movie-title {
+  vertical-align: middle;
+}
+
+.movie-thoughts {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.like-button,
+.dislike-button {
+  background-color: transparent;
+  outline-style: none;
+  /*height: fit-content;*/
+  border: none;
+  justify-self: center;
+}
+
+.like-button:hover,
+.dislike-button:hover {
+  cursor: pointer;
+}
+
+.delete-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+/*These are for watchedsomething*/
+.search-container {
+  text-align: center;
+  margin: 3% 20%;
+}
+
+textarea {
+  font-family: "Roboto", sans-serif;
+  border-color: #f33c24;
+  outline:none;
+}
+
+.search-result-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.search-result-entry {
+  background-color:#f2f2f2;
+  padding: 15px;
+  border-radius: 2px;
+  box-shadow: 5px 5px gray;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.add-button {
+  margin-top: 15px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie List</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    
+    <body>
+        <div class="banner" style="background-image: url(https://i.redd.it/4fxxbm4opjd31.jpg); background-repeat: repeat-y;">
+            <h1 class="banner-head">MyMovieList</h1>
+            <h2 class="sub-head">How many movies have you seen?</h2>
+        </div>
+        <div class="navigation-panel">
+            <p id="welcome-user"></p>
+            <p>Watched something new?</p>
+            <a href="watchedsomething.html"><button>Click me to add it!</button></a>
+            <p>Done for now?</p>
+            <a href="index.html"><button id="logout-button">LOGOUT</button></a>
+        </div>
+
+        <div id="root" class="movie-list-container">
+            <div class="list-header-container">
+                <h1 class="list-header">Completed Movies</h1>
+                <h2>Poster</h2>
+                <h2 style="border-left: thin solid black; border-right: thin solid black;">Title</h2>
+                <h2>Rating</h2>
+            </div>
+        </div>
+
+        <script> document.getElementById("welcome-user").innerHTML = `Welcome <span style="font-weight: bold; font-size:2em;">${localStorage.getItem("user")}!</span>`</script>
+        <script> document.getElementById("logout-button").addEventListener("click", function logout(){
+            localStorage.clear();
+        })</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.js"></script>
+        <script src="movielist.js" type="module"></script>
+    </body>
+</html>
